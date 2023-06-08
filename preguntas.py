@@ -200,7 +200,7 @@ def pregunta_06():
 
     # pronostique la polaridad del sentimiento para los datos
     # no etiquetados
-    y_untagged_pred = gridSearchCV.predict()
+    y_untagged_pred = gridSearchCV.predict(X_untagged)
 
     # Retorne el vector de predicciones
     return y_untagged_pred
